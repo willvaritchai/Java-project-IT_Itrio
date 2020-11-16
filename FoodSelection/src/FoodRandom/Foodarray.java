@@ -19,14 +19,7 @@ public class Foodarray {
         Random r = new Random();
         int randomfunction = r.nextInt(randomfoodItalian1.length); 
         System.out.println(randomfoodItalian1[randomfunction]);
-        System.out.println("");
-        System.out.println("ทดสอบ");
-        System.out.println("TEST");
-        System.out.println("I love pornhub");
-        System.out.println("I love avenger");
-        System.out.println("I love flash");
-            System.out.println("test1");
-            System.out.println("test2");
+        
 
 
     }
