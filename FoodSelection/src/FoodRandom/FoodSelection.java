@@ -17,8 +17,16 @@ public class FoodSelection {
             case 5:
                 return NationalityFood.Americanfood;
             default:
+                System.out.println("Please select 1-5");
                 return null;
         }
+    }
+
+    public static int readNum() {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Please select the nationality food that you interested in : ");
+        int num = scn.nextInt();
+        return num;
     }
 
     public static RestaurantForItalian secondSelection(int num2) {
@@ -85,48 +93,40 @@ public class FoodSelection {
                 return null;
         }
     }
-    
-
-    public static int readNum() {
-        Scanner scn = new Scanner(System.in);
-        System.out.print("Please type the number of the type of food you are interested in : ");
-        int num = scn.nextInt();
-        return num;
-    }
 
     public static int readNumSecond() {
         Scanner scn2 = new Scanner(System.in);
-        System.out.print("Please select more : ");
+        System.out.print("Please select the restaurant  : ");
         int num = scn2.nextInt();
         return num;
     }
 
     public static int readNumThird() {
         Scanner scn3 = new Scanner(System.in);
-        System.out.print("Please select more :");
+        System.out.print("Please select restaurant : ");
         int num = scn3.nextInt();
         return num;
     }
 
     public static int readNumFourth() {
         Scanner scn4 = new Scanner(System.in);
-        System.out.print("Please select more :");
+        System.out.print("Please select restaurant : ");
         int num = scn4.nextInt();
         return num;
     }
 
     public static int readNumFifth() {
         Scanner scn5 = new Scanner(System.in);
-        System.out.print("Please select more :");
+        System.out.print("Please select restaurant : ");
         int num = scn5.nextInt();
         return num;
     }
 
     public static int readNumSixth() {
         Scanner scn6 = new Scanner(System.in);
-        System.out.print("Please select more :");
+        System.out.print("Please select restaurant :");
         int num = scn6.nextInt();
         return num;
     }
-    
+
 }
