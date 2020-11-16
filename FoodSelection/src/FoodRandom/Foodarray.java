@@ -21,5 +21,6 @@ public class Foodarray {
         System.out.println(randomfoodItalian1[randomfunction]);
         System.out.println("");
         System.out.println("ทดสอบ");
+        System.out.println("TEST");
     }
 }
