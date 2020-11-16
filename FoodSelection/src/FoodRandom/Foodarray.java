@@ -24,7 +24,7 @@ public class Foodarray {
         System.out.println("TEST");
         System.out.println("I love pornhub");
         System.out.println("I love avenger");
-        System.out.println("I love justiceleague");
+        System.out.println("I love flash");
 
     }
 }
