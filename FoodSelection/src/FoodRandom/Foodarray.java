@@ -23,7 +23,7 @@ public class Foodarray {
         System.out.println("ทดสอบ");
         System.out.println("TEST");
         System.out.println("I love pornhub");
-        System.out.println("I love hentai");
+        System.out.println("I love avenger");
 
     }
 }
