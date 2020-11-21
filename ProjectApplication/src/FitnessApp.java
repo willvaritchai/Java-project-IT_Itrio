@@ -1,75 +1,103 @@
+
 import java.util.Scanner;
+
 public class FitnessApp {
+
     public static void main(String[] args) {
         int select;
-        int count = 0;
+        int countmenu1 = 0;
+        int countmenu2 = 0;
         Member member1 = null, member2 = null, member3 = null, member4 = null, member5 = null;
-        String menuStr = "1. add member \n"
-                + "2. edit member \n"
-                + "3. show all members\n"
+        String information = "Welcome to application ''";
+        String menuStr = "\n1. add member \n"
+                + "2. show all members\n"
+                + "3. edit member \n"
                 + "0. exit";
         Scanner scn = new Scanner(System.in);
 
         System.out.println(menuStr);
 
         do {
-            System.out.print("Select menu: ");
+            System.out.print("\n" + "--------------------"+"\n"+"Select menu : ");
             select = scn.nextInt();
             scn.nextLine();
             switch (select) {
-                case 1:
-//-------------------------------------------------------------
 
-                    switch (count) {
+//----------------case1 section!------------------------------//              
+                case 1:
+                    System.out.println("you select : " + select);
+
+                    switch (countmenu1) {
                         case 0:
-                            count++;
-                            member1 = new Member(getNameFromKeyboad(scn), getWeightFromKeyboad(scn), getHeightFromKeyboad(scn));
+                            countmenu1++;
+                            member1 = new Member(getNameFromKeyboad(scn), getIdFromKeyboad(scn));
+                            System.out.println("\n"+"----------------------" + "\n" + menuStr);
                             break;
                         case 1:
-                            count++;
-                            member2 = new Member(getNameFromKeyboad(scn), getWeightFromKeyboad(scn), getHeightFromKeyboad(scn));
+                            countmenu1++;
+                            member2 = new Member(getNameFromKeyboad(scn), getIdFromKeyboad(scn));
+                                                        System.out.println("\n"+"----------------------" + "\n" + menuStr);
                             break;
                         case 2:
-                            count++;
-                            member3 = new Member(getNameFromKeyboad(scn), getWeightFromKeyboad(scn), getHeightFromKeyboad(scn));
+                            countmenu1++;
+                            member3 = new Member(getNameFromKeyboad(scn), getIdFromKeyboad(scn));
+                            System.out.println("\n"+"----------------------" + "\n" + menuStr);
+                            break;
+                        case 3:
+                            countmenu1++;
+                            member4 = new Member(getNameFromKeyboad(scn), getIdFromKeyboad(scn));
+                            System.out.println("\n"+"----------------------" + "\n" + menuStr);
+                            break;
+                        case 4:
+                            countmenu1++;
+                            member5 = new Member(getNameFromKeyboad(scn), getIdFromKeyboad(scn));
+                            System.out.println("\n"+"----------------------" + "\n" + menuStr);
                             break;
                     }
-
 //-------------------------------------------------------------
+                case 3:
+
                     break;
                 case 2:
-                    break;
-                case 3:
                     if (member1 != null) {
-                        System.out.println(member1.toString());
+                        System.out.println("you select : " + select + "\n" + "\n" + "'Show all members'" + "\n" + member1.toString());
                     }
 
                     if (member2 != null) {
                         System.out.println(member2.toString());
+
                     }
 
                     if (member3 != null) {
                         System.out.println(member3.toString());
+
+                    }
+                    if (member4 != null) {
+                        System.out.println(member4.toString());
+
+                    }
+
+                    if (member5 != null) {
+                        System.out.println(member5.toString());
+
                     }
                     break;
             }
-            System.out.println(select);
         } while (select != 0);
+        {
+            System.out.println("\n<<Exit>>" + "\nThank you !!!");
+        }
+
     }
 
     public static String getNameFromKeyboad(Scanner input) {
-        System.out.print("Input member name : ");
+        System.out.print("\n" + "Input member name : ");
         return input.nextLine();
     }
 
-    public static int getWeightFromKeyboad(Scanner input) {
-        System.out.print("Input weight(kg.) : ");
-        return input.nextInt();
-    }
-
-    public static int getHeightFromKeyboad(Scanner input) {
-        System.out.print("Input height(cm.) : ");
-        return input.nextInt();
+    public static long getIdFromKeyboad(Scanner input) {
+        System.out.print("Input Id : ");
+        return input.nextLong();
     }
 
 }
