@@ -1,17 +1,34 @@
-package FoodRandom;
+package FoodInternationalApplication;
+
+import EnumForFoodSelection.NationalityFood;
+import EnumForFoodSelection.RestaurantForAmerican;
+import EnumForFoodSelection.RestaurantForChinese;
+import EnumForFoodSelection.RestaurantForItalian;
+import EnumForFoodSelection.RestaurantForJapanese;
+import EnumForFoodSelection.RestaurantForThai;
 
 import java.util.Scanner;
 
-public class FoodSelection {
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
+/**
+ *
+ * @author Win10
+ */
+public class FoodSelection {
+    
     public static NationalityFood foodSelection(int num) {
         switch (num) {
             case 1:
-                return NationalityFood.Italianfood;
+                return NationalityFood.Thaifood;
             case 2:
                 return NationalityFood.Japanesefood;
             case 3:
-                return NationalityFood.Thaifood;
+                return NationalityFood.Italianfood;
             case 4:
                 return NationalityFood.Chinesefood;
             case 5:
@@ -20,14 +37,14 @@ public class FoodSelection {
                 return null;
         }
     }
-
-    public static int readNum() {
+    
+     public static int readNum() {
         Scanner scn = new Scanner(System.in);
         System.out.print("Please select the nationality food that you interested in : ");
         int num = scn.nextInt();
         return num;
     }
-
+     
     public static RestaurantForItalian secondSelection(int num2) {
         switch (num2) {
             case 1:
@@ -127,5 +144,5 @@ public class FoodSelection {
         int num = scn6.nextInt();
         return num;
     }
-
+ 
 }
