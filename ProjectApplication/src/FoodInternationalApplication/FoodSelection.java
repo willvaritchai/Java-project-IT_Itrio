@@ -1,13 +1,7 @@
 package FoodInternationalApplication;
 
 import EnumForFoodSelection.NationalityFood;
-import EnumForFoodSelection.RestaurantForAmerican;
-import EnumForFoodSelection.RestaurantForChinese;
-import EnumForFoodSelection.RestaurantForItalian;
-import EnumForFoodSelection.RestaurantForJapanese;
-import EnumForFoodSelection.RestaurantForThai;
 import java.util.Random;
-
 import java.util.Scanner;
 
 /*

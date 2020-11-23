@@ -1,8 +1,8 @@
 package FoodInternationalApplication;
 
 public class Member {
-   private String name;
-   private long id;
+   private final String name;
+   private final long id;
    
    public Member(String name,long id){
        this.name=name;
