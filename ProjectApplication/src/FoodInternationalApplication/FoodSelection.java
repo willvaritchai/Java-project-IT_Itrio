@@ -1,6 +1,5 @@
 package FoodInternationalApplication;
 
-import EnumForFoodSelection.NationalityFood;
 import java.util.Random;
 import java.util.Scanner;
 
