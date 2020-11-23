@@ -109,8 +109,6 @@ public class FoodInternationalApp {
                             System.out.println("- 94 Phochana [Location : 618 Soi Pracha Uthit 84/3, Thung Khru Subdistrict, Thung Khru District, Bangkok 10140]");
                             System.out.println("- Kaysorn restaurant [Location : 559 18 Charoen Rat Road, Bang Khlo, Bang Kho Laem, Bangkok 10120]");
                             System.out.println("--------------------------");
-                            /*int num2 = FoodSelection.readNumSecond();
-                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.thaiSelection(num2) + "]");*/
                             String randomizing = FoodSelection.randomFunctionThailandRes();
                             System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
@@ -120,8 +118,6 @@ public class FoodInternationalApp {
                             System.out.println("- Sushi Hiro [Location : Borommaratchachonnani Road, Bangkok (The shop is located on the 1st floor Community Mall, the sense project Pinklao, next to Central Pinklao)]");
                             System.out.println("- Zen Restaurant [Location : 160 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
                             System.out.println("--------------------------");
-                            /*int num3 = FoodSelection.readNumThird();
-                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.japaneseSelection(num3) + "]");*/
                             String randomizing2 = FoodSelection.randomFunctionJapaneseRes();
                             System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
@@ -131,8 +127,6 @@ public class FoodInternationalApp {
                             System.out.println("- Lenzi Tuscan Kitchen [Location : 69/1-2 Ruamruedee 2 Wittayu Road 10330]");
                             System.out.println("- La Scarpetta Bangkok [Location : 1495 Charoenkrung Road, Silom, Bangrak, Bangkok 10500]");
                             System.out.println("--------------------------");
-                            /*int num4 = FoodSelection.readNumFourth();
-                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.italianSelection(num4) + "]");*/
                             String randomizing3 = FoodSelection.randomFunctionItalianRes();
                             System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
@@ -142,8 +136,6 @@ public class FoodInternationalApp {
                             System.out.println("- HUA SENG HONG [Location : Central Rama 2, 4th Floor, Room No. 403, Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
                             System.out.println("- Tow pochana [Location : 69 Soi Rat Burana 16 (Suksawat 25, Suksawat Rd., Bangpakok, Rat Burana, Bangkok 10140]");
                             System.out.println("--------------------------");
-                            /*int num5 = FoodSelection.readNumFifth();
-                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.chineseSelection(num5) + "]");*/
                             String randomizing4 = FoodSelection.randomFunctionChaineseRes();
                             System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
@@ -153,8 +145,6 @@ public class FoodInternationalApp {
                             System.out.println("- ROAST coffee&eatery [Location : The COMMONS 335 Soi Thonglor 17, Khlong Tan Nuea, Watthana, Bangkok 10110]");
                             System.out.println("- Auntie Anne's [Location : 160 Rama 2 Road, Bangkok (Central Rama 2, 1st floor, Room K 07/1)]");
                             System.out.println("--------------------------");
-                            /*int num6 = FoodSelection.readNumSixth();
-                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.americanSelection(num6) + "]");*/
                             String randomizing5 = FoodSelection.randomFunctionAmericanRes();
                             System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                         default:
