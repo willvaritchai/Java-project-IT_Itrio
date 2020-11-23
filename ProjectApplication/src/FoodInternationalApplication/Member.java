@@ -12,7 +12,7 @@ public class Member {
    
     @Override
     public  String toString() {
-        return "   Member -> [" + "name= " + name + " , id= " + id + "] ";
+        return "   [" + "name= " + name + " , id= " + id + "] ";
     }
 
 
