@@ -110,7 +110,7 @@ public class FoodInternationalApp {
                             System.out.println("- Kaysorn restaurant [Location : 559 18 Charoen Rat Road, Bang Khlo, Bang Kho Laem, Bangkok 10120]");
                             System.out.println("--------------------------");
                             String randomizing = FoodSelection.randomFunctionThailandRes();
-                            System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
+                            System.out.println("\n  \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
                         case 2:
                             System.out.println("\n'List of Japanese Restaurant'");
@@ -119,7 +119,7 @@ public class FoodInternationalApp {
                             System.out.println("- Zen Restaurant [Location : 160 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
                             System.out.println("--------------------------");
                             String randomizing2 = FoodSelection.randomFunctionJapaneseRes();
-                            System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
+                            System.out.println("\n  \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
                         case 3:
                             System.out.println("\n'List of Italian Restaurant'");
@@ -128,7 +128,7 @@ public class FoodInternationalApp {
                             System.out.println("- La Scarpetta Bangkok [Location : 1495 Charoenkrung Road, Silom, Bangrak, Bangkok 10500]");
                             System.out.println("--------------------------");
                             String randomizing3 = FoodSelection.randomFunctionItalianRes();
-                            System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
+                            System.out.println("\n  \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
                         case 4:
                             System.out.println("\n'List of Chinese Restaurant'");
@@ -137,7 +137,7 @@ public class FoodInternationalApp {
                             System.out.println("- Tow pochana [Location : 69 Soi Rat Burana 16 (Suksawat 25, Suksawat Rd., Bangpakok, Rat Burana, Bangkok 10140]");
                             System.out.println("--------------------------");
                             String randomizing4 = FoodSelection.randomFunctionChaineseRes();
-                            System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
+                            System.out.println("\n \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                             break;
                         case 5:
                             System.out.println("\n'List of American Restaurant'");
@@ -146,7 +146,7 @@ public class FoodInternationalApp {
                             System.out.println("- Auntie Anne's [Location : 160 Rama 2 Road, Bangkok (Central Rama 2, 1st floor, Room K 07/1)]");
                             System.out.println("--------------------------");
                             String randomizing5 = FoodSelection.randomFunctionAmericanRes();
-                            System.out.println("\n* (Food menus and restaurants will increase in the future. 'Sorry for the inconvenience') * \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
+                            System.out.println("\n  \n  . \n  . \n  . \n\nThank you ! \nHope that you will choose to see the food menu of various restaurants. Happily !");
                         default:
                             break;
                     }
