@@ -2,7 +2,6 @@ package FoodInternationalApplication;
 
 import EnumForFoodSelection.NationalityFood;
 import java.util.Scanner;
-import java.util.Random;
 
 public class FoodInternationalApp {
 
@@ -85,10 +84,11 @@ public class FoodInternationalApp {
                     if (member5 != null) {
                         System.out.println(member5.toString());
                     }
-                
+
                 case 100:
 //--Need to has this Special-Case because, if doesnot has this case "case 3 will not work  "--//              
                     break;
+
 //----------------case3 InternationalFood section!------------------------------//              
                 case 3:
                     System.out.println("you select : [Interesting international food (and recommended food)]");
@@ -100,68 +100,62 @@ public class FoodInternationalApp {
                     int num = FoodSelection.readNum();
                     NationalityFood SelectNationalityFood = FoodSelection.foodSelection(num);
                     System.out.println("you select [" + SelectNationalityFood + "]");
-                    
-                    switch (num) {
-            case 3:
-                System.out.println("");
-                System.out.println("---List of Italian Restaurant---");
-                System.out.println("1.Big mama Pizzeria [Location : 139 Soi Sukhumvit 21 North Klongtoey, Watthana, Bangkok 10110]");
-                System.out.println("2.Lenzi Tuscan Kitchen [Location : 69/1-2 Ruamruedee 2 Wittayu Road 10330]");
-                System.out.println("3.La Scarpetta Bangkok [Location : 1495 Charoenkrung Road, Silom, Bangrak, Bangkok 10500]");
-                System.out.println("--------------------------");
-                int num2 = FoodSelection.readNumSecond();
-                System.out.println("You selected Restaurant : " + FoodSelection.secondSelection(num2));
-                break;
-            case 2:
-                System.out.println("");
-                System.out.println("---List of Japanese Restaurant---");
-                System.out.println("1.Fuji Restaurant [Location : Central Plaza Rama 2, 4th Floor, Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
-                System.out.println("2.Sushi Hiro [Location : Borommaratchachonnani Road, Bangkok (The shop is located on the 1st floor Community Mall, the sense project Pinklao, next to Central Pinklao)]");
-                System.out.println("3.Zen Restaurant [Location : 160 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
-                System.out.println("--------------------------");
-                int num3 = FoodSelection.readNumThird();
-                System.out.println("You selected Restaurant : " + FoodSelection.thirdSelection(num3));
-                break;
-            case 1:
-                System.out.println("");
-                System.out.println("---List of Thai Restaurant---");
-                System.out.println("1.Tam leung tong [Location : Thung Khru Sub-district, Thung Khru District, Bangkok 10140]");
-                System.out.println("2.94 Phochana [Location : 618 Soi Pracha Uthit 84/3, Thung Khru Subdistrict, Thung Khru District, Bangkok 10140]");
-                System.out.println("3.Kaysorn restaurant [Location : 559 18 Charoen Rat Road, Bang Khlo, Bang Kho Laem, Bangkok 10120]");
-                System.out.println("--------------------------");
-                int num4 = FoodSelection.readNumFourth();
-                System.out.println("You selected Restaurant : " + FoodSelection.fourthSelection(num4));
-                break;
-            case 4:
-                System.out.println("");
-                System.out.println("---List of Chinese Restaurant---");
-                System.out.println("1.Ruenros Restaurant [Location : 762/2 Bangkok Square Project, Rama III Road, Bang Phong Pang, Yan Nawa, Bangkok 10120]");
-                System.out.println("2.HUA SENG HONG [Location : Central Rama 2, 4th Floor, Room No. 403, Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
-                System.out.println("3.Tow pochana [Location : 69 Soi Rat Burana 16 (Suksawat 25, Suksawat Rd., Bangpakok, Rat Burana, Bangkok 10140]");
-                System.out.println("--------------------------");
-                int num5 = FoodSelection.readNumFifth();
-                System.out.println("You selected Restaurant : " + FoodSelection.fifthSelection(num5));
-                break;
-            case 5:
-                System.out.println("");
-                System.out.println("---List of American Restaurant---");
-                System.out.println("1.McDonalds M-Park Rama2 [Location : 119/1 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
-                System.out.println("2.ROAST coffee&eatery [Location : The COMMONS 335 Soi Thonglor 17, Khlong Tan Nuea, Watthana, Bangkok 10110]");
-                System.out.println("3.Auntie Anne's [Location : 160 Rama 2 Road, Bangkok (Central Rama 2, 1st floor, Room K 07/1)]");
-                System.out.println("--------------------------");
-                int num6 = FoodSelection.readNumSixth();
-                System.out.println("You selected Restaurant : " + FoodSelection.sixthSelection(num6));
-            default:
-                break;
-        }
-                    /*  System.out.println("\n! Random Function !");
-                    
-                   String[] randomfoodThai = {"Pork Satay 70 THB", "Fried Fish Wonton 120 THB", "Roasted Pork 120 THB", "Steamed Sea Bass with Lemon 350 THB", "Sour Soup with Prawn & Mixed Vegetables 150 THB"};
-                        Random a = new Random();
-                        int randomfunction = a.nextInt(randomfoodThai.length);
-                        System.out.println(randomfoodThai[randomfunction]);*/
-                    break;
 
+                    switch (num) {
+
+                        case 1:
+                            System.out.println("\n'List of Thai Restaurant'");
+                            System.out.println("1.Tam leung tong [Location : Thung Khru Sub-district, Thung Khru District, Bangkok 10140]");
+                            System.out.println("2.94 Phochana [Location : 618 Soi Pracha Uthit 84/3, Thung Khru Subdistrict, Thung Khru District, Bangkok 10140]");
+                            System.out.println("3.Kaysorn restaurant [Location : 559 18 Charoen Rat Road, Bang Khlo, Bang Kho Laem, Bangkok 10120]");
+                            System.out.println("--------------------------");
+                            int num4 = FoodSelection.readNumFourth();
+                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.thaiSelection(num4) + "]");
+                            String randomizing = FoodSelection.randomFunctionThailandOne();
+                            break;
+                        case 2:
+                            System.out.println("\n'List of Japanese Restaurant'");
+                            System.out.println("1.Fuji Restaurant [Location : Central Plaza Rama 2, 4th Floor, Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
+                            System.out.println("2.Sushi Hiro [Location : Borommaratchachonnani Road, Bangkok (The shop is located on the 1st floor Community Mall, the sense project Pinklao, next to Central Pinklao)]");
+                            System.out.println("3.Zen Restaurant [Location : 160 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
+                            System.out.println("--------------------------");
+                            int num3 = FoodSelection.readNumThird();
+                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.japaneseSelection(num3) + "]");
+                            String randomizing2 = FoodSelection.randomFunctionJapaneseOne();
+                            break;
+                        case 3:
+                            System.out.println("\n'List of Italian Restaurant'");
+                            System.out.println("1.Big mama Pizzeria [Location : 139 Soi Sukhumvit 21 North Klongtoey, Watthana, Bangkok 10110]");
+                            System.out.println("2.Lenzi Tuscan Kitchen [Location : 69/1-2 Ruamruedee 2 Wittayu Road 10330]");
+                            System.out.println("3.La Scarpetta Bangkok [Location : 1495 Charoenkrung Road, Silom, Bangrak, Bangkok 10500]");
+                            System.out.println("--------------------------");
+                            int num2 = FoodSelection.readNumSecond();
+                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.italianSelection(num2) + "]");
+                            String randomizing3 = FoodSelection.randomFunctionItalianOne();
+                            break;
+                        case 4:
+                            System.out.println("\n'List of Chinese Restaurant'");
+                            System.out.println("1.Ruenros Restaurant [Location : 762/2 Bangkok Square Project, Rama III Road, Bang Phong Pang, Yan Nawa, Bangkok 10120]");
+                            System.out.println("2.HUA SENG HONG [Location : Central Rama 2, 4th Floor, Room No. 403, Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
+                            System.out.println("3.Tow pochana [Location : 69 Soi Rat Burana 16 (Suksawat 25, Suksawat Rd., Bangpakok, Rat Burana, Bangkok 10140]");
+                            System.out.println("--------------------------");
+                            int num5 = FoodSelection.readNumFifth();
+                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.chineseSelection(num5) + "]");
+                            String randomizing4 = FoodSelection.randomFunctionChaineseOne();
+                            break;
+                        case 5:
+                            System.out.println("\n'List of American Restaurant'");
+                            System.out.println("1.McDonalds M-Park Rama2 [Location : 119/1 Rama 2 Road, Samae Dam, Bang Khun Thian, Bangkok 10150]");
+                            System.out.println("2.ROAST coffee&eatery [Location : The COMMONS 335 Soi Thonglor 17, Khlong Tan Nuea, Watthana, Bangkok 10110]");
+                            System.out.println("3.Auntie Anne's [Location : 160 Rama 2 Road, Bangkok (Central Rama 2, 1st floor, Room K 07/1)]");
+                            System.out.println("--------------------------");
+                            int num6 = FoodSelection.readNumSixth();
+                            System.out.println("You selected Restaurant : " + "[" + FoodSelection.americanSelection(num6) + "]");
+                            String randomizing5 = FoodSelection.randomFunctionAmericanOne();
+                        default:
+                            break;
+                    }
+                    break;
             }
         } while (select != 0);
         {
